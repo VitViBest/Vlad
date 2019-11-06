@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Pharmacy.BLL",
+    "\\Pharmacy.BLL\\Services",
+    "\\Pharmacy.WEB",
+    "\\Pharmacy.WEB\\App_Data",
+    "\\Pharmacy.WEB\\Controllers",
+    "\\Pharmacy.WEB\\Views",
+    "\\Pharmacy.WEB\\Views\\Home"
+  ],
+  "SelectedNode": "\\Pharmacy.WEB\\App_Data",
+  "PreviewInSolutionExplorer": false
+}

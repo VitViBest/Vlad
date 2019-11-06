@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|ZCOOL+XiaoWei&display=swap"
+          rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheets">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+
+
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/themes/base/css")
+    @Styles.Render("~/Content/Styles/Shared/main-layout-styles.css")
+    @Scripts.Render("~/bundles/modernizr")
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+    <!--...........................................
+        HEADER
+    .............................................-->
+    <div class="header">
+        <div class="header__title">CUBESHOP</div>
+        <div class="header__slogan">супер-пупер инет магазин</div>
+        <div class="header__arrow">
+            <i class="fas fa-chevron-circle-down"></i>
+        </div>
+    </div>
+
+
+
+
+    <!--...........................................
+        CUBEDAY
+    ...............................................-->
+    <div class="CUBEDAY">
+        <div class="container">
+            @RenderBody()
+        </div>
+    </div>
+    <!--...........................................
+        FOOTER
+    ...............................................-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="footer__name"> Мы находимся по адресу:</p>
+                    <p>
+                        г.Харьков, ул.Сумская 6.<br>
+                        Так же наш контактный телефон: +380988661577 +380970596062
+                    </p>
+
+                </div>
+                <div class="col-md-4">
+
+                    <p class="footer__social">Наши профили в социальных сетях:</p>
+                    <p class="footer__social-icons">
+
+                        <a href="#" target="_blank">
+                            <i class="fab fa-vk"></i>
+                        </a>
+
+                        <a href="#" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+
+                        <a href="#" target="_blank">
+                            <i class="fab fa-twitch"></i>
+                        </a>
+
+                        <a href="#" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+
+                        <a href="#" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    <p>
+                </div>
+                <div class="col-md-4">
+                    <div><a href="#" class="button" target="_blank">Связаться ВКОНТАКТЕ</a></div>
+                    <p> Напишите нам,чтобы заказать или узнать<br> более подробную информацию о продукте</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/scripts/jquery.unobtrusive-ajax.js")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

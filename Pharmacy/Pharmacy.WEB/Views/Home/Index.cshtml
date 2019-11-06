@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Pharmacy.WEB.Models.Domain_Models.Store.KindDM>
+
+@{
+    ViewBag.Title = "Курсач Влада";
+}
+
+@Styles.Render("~/Content/Styles/Home/index.css")
+
+<div class="title">
+    Каталог
+</div>
+
+<div class="row">
+    @foreach (var i in Model)
+    {
+    <div class="col-md-4">
+        <div class="" cubeshop-item>
+            <div class="cubeshop-item__img">
+                <img src="@i.Photo"
+                     alt="@i.Name" style="width:100%">
+            </div>
+            <div class="cubeshop-item__title">
+                <a href="Кубик Рубика.html"><u> @i.Name </u> </a>
+            </div>
+            <div class="cubeshop-item__text">
+                <p>
+                   @i.Text
+                <p>
+            </div>
+        </div>
+    </div>
+    }
+</div>

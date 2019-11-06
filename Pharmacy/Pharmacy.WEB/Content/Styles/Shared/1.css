@@ -1,0 +1,126 @@
+
+
+ /*.........................................
+             HEADER
+......................................*/
+.header {
+    background: #343c4e;
+    background-image: url("https://cdn.pixabay.com/photo/2018/12/10/20/42/rubiks-cube-3867690_960_720.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.header__title{
+    font-size: 56px;
+    margin-bottom: 30px;
+    font-family: 'ZCOOL XiaoWei', serif; 
+    margin-top: -50px;
+}
+
+.header__slogan{
+    font-size: 28px;
+    line-height: 42px;
+}
+
+.header__arrow{
+    font-size: 48px;
+    width: 60px;
+    height: 50px;
+    margin-left: -30px;
+
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+
+}
+
+
+/*...................................................
+                    FOOTER
+................................................*/
+
+
+
+.footer{
+    background-color: #061634;
+    color: #6479a2;
+    padding-top: 90px;
+    padding-bottom: 190px;
+
+}
+
+.footer p{
+    margin-top: 0px;
+    margin-bottom: 15px;
+
+}
+
+p.footer__name{
+    font-size: 20px;
+    margin-bottom: 10px;
+    line-height: normal;
+    font-family: 'ZCOOL XiaoWei', serif; 
+}
+
+p.footer__social{
+    color: #FFF;;
+}
+
+p.footer__social-icons{
+    color: #FFF;
+    font-size: 32px;
+}
+
+p.footer__social-icons a {
+    color: #FFF;
+    text-decoration: none;
+    margin-right: 30px;
+    transition: 0.2s ease-out;
+}
+p.footer__social-icons a:last-child {
+margin-right: 0px;
+}
+p.footer__social-icons a:hover {
+    color: #ffe400;
+}
+
+.button{
+    font-weight: 700;
+    text-decoration: none;
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+
+
+    display: inline-block;
+
+    border-width: 2px;
+    border-color: #FFF;
+    border-style: solid;
+    border-radius: 50px;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 23px;
+    padding-right: 23px;
+
+    margin-bottom: 13px;
+
+    transition: 0.2s ease-out;
+
+}
+
+.button:hover{
+    color: #061634;
+    background-color: #FFF;;
+
+}
